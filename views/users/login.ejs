@@ -1,0 +1,23 @@
+    <div class="row">
+        <div class="col-6 offset-3">
+            <h3 class="col-6 offset-3">login</h3>
+            <form action="/login" method="post"class="needs-validations" novalidate >
+            <div>
+                <label for="username" class="form-label">Username</label>
+                <input type="text" name="username" id="username" placeholder="" class="form-control" required>
+                <div class="invalid-feedback">Enter Valid username</div>
+                <div class="valid-feedback">Username Looks Good!</div>
+                <br><br>
+            </div>
+
+            <div>
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password" id="password" placeholder="" class="form-control" required>
+                <div class="invalid-feedback">Enter Valid password</div>
+                <div class="valid-feedback">Password Looks Good!</div>
+                <br><br>
+            </div>
+             <button class="btn btn-dark add-btn mt-3 ">Login</button>
+            </form>
+        </div>
+    </div>
