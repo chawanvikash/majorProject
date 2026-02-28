@@ -12,9 +12,9 @@ const ListingSchema=new Schema({
 
     },
     image:{
-        type:String,
-        set:(v)=>v===" "?"https://img.freepik.com/free-photo/gorgeous-foggy-…3921310624bad865e81514a3b5a23407e83b54f934&w=1480":v,
-        default:"https://img.freepik.com/free-photo/gorgeous-foggy-…3921310624bad865e81514a3b5a23407e83b54f934&w=1480",
+        
+        filename:String,
+        url:String,
     },
     price:{
         type:Number,

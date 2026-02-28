@@ -1,7 +1,13 @@
+if(process.env.NODE_ENV!="Production"){
+    require("dotenv").config();
+}
+
+
 const express=require("express");
 const app=express();
 const path=require("path");
 const mongoose = require('mongoose');
+
 
 const Listing=require("./models/listing.js");
 const methodOverride=require("method-override");
@@ -74,16 +80,6 @@ app.use((req, res, next) => {
 });
 
 
-
-app.get("/demouser",async(req,res)=>{
-    let fakeUser=new User({
-        username:"vicky",
-        email:"vicky@gmil.com",
-    });
-    const registeredUser= await User.register(fakeUser,"hello123");
-    res.send(registeredUser);
-
-})
 
 app.use("/listings",listingsRoute);
 app.use("/",userRoute);
