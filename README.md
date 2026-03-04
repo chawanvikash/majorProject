@@ -20,51 +20,13 @@ Features-->
 
 * Delete their posts.
   
--------------------------------------------------------------------------------------------------------------------------------------------------
-Getting Started-->
+Purpose of this Project
+The primary goal of this project was to master the fundamentals of Server-Side Rendering (SSR) and the Model-View-Controller (MVC) architectural pattern. By building this application, I gained deep experience in:
 
-To run this project locally, you will need to run the Backend and Frontend servers in two separate terminals.
+Template Engines: Utilizing EJS for dynamic UI rendering and layout management (boilerplate, includes, and partials).
 
-Prerequisites
+Routing & Middleware: Handling complex Express routes and implementing custom middleware for error handling and authentication.
 
-Node.js (v18 or later)
+Database Modeling: Designing schemas with Mongoose to handle relational-style data in a NoSQL environment.
 
-MongoDB Server (Local): You must have MongoDB Community Server installed and running on your local machine.
-
-You can use MongoDB Compass to visually manage your database.  
-
--------------------------------------------------------------------------------------------------------------------------------------------------
-
-1.SERVER SETUP->
-----------------
-
- 2. Install all required npm packages
-(npm install)
-
- 3. Create the .env file
- Create a new file in the /Backend folder named (.env)
-
-
- 4. Run the server
- This will start the server on http://localhost:8080
-(nodemon app.js)
-
--------------------------------------------------------------------------------------------------------------------------------------------------
-
-CREATE THIS FILE AT, /.env
-----------------------------------
-
- This is the secret key for signing your session cookies
-(SESSION_SECRET="your_random_secret_string_here")
-
- This is the connection string for your local MongoDB
-(DATABASE_URL="mongodb://127.0.0.1:27017/Airhouse")
-
---------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-3. You're All Set!
-
-Your application is now running.
-
-Backend API: http://localhost:8080
+Git Hygiene: Learning the importance of environment variables and the correct use of .gitignore to maintain clean production repositories.
